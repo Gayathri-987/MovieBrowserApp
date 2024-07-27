@@ -13,6 +13,7 @@ const MovieDetailsScreen = ({ route }) => {
       try {
         const response = await getMovieDetails(movieId);
         setMovie(response.data);
+        console.log(response.data,"responsedata")
       } catch (error) {
         console.error(error);
         setError('Failed to load movie details');
@@ -57,6 +58,8 @@ const MovieDetailsScreen = ({ route }) => {
       <Text style={styles.title}>{movie.title}</Text>
       <Text style={styles.releaseDate}>Release Date: {movie.release_date}</Text>
       <Text style={styles.rating}>Rating: {movie.vote_average}</Text>
+      <Text style={styles.rating}>Revenue: {movie.revenue}</Text>
+      <Text style={styles.rating}>Popularity: {movie.popularity}</Text>
       <Text style={styles.overview}>{movie.overview}</Text>
     </ScrollView>
   );

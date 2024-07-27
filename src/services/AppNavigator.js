@@ -21,7 +21,7 @@ const TabNavigator = () => (
 
 const AppNavigator = () => (
   <Stack.Navigator>
-    <Stack.Screen name="Home" component={TabNavigator}    options={{ headerShown: false }} />
+    <Stack.Screen name="Home" component={TabNavigator} options={{ headerShown: false }}/>
     <Stack.Screen name="MovieDetails" component={MovieDetailsScreen} />
   </Stack.Navigator>
 );
