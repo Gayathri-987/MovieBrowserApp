@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginVertical: 5,
     color: '#000',
+  },
   overview: {
     fontSize: 16,
     marginVertical: 10,
