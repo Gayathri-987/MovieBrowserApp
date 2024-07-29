@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 import { getMovieDetails } from '../services/tmdbApi';
 
 const MovieDetailsScreen = ({ route }) => {
-  const { movieId } = route.params; // Get movieId from route params
+  const { movieId } = route.params;
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -80,18 +80,22 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginVertical: 10,
+    color: '#000',
   },
   releaseDate: {
     fontSize: 16,
     marginVertical: 5,
+    color: '#000',
   },
   rating: {
     fontSize: 16,
     marginVertical: 5,
-  },
+    color: '#000',
   overview: {
     fontSize: 16,
     marginVertical: 10,
+    color: '#000',
+
   },
 });
 

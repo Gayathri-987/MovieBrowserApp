@@ -44,13 +44,16 @@ const styles = StyleSheet.create({
   },
   movieInfo: {
     marginLeft: 10,
+    color: '#000', // Explicitly set text color to black
   },
   title: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: '#000', // Explicitly set text color to black
   },
   details: {
     fontSize: 14,
+    color: '#000', // Explicitly set text color to black
   },
 });
 
